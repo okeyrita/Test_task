@@ -138,8 +138,7 @@ scrapy crawl opencorp
 
 ## MongoDB
 
-When running of parser is done you can see your database.
-Let's use these commands.
+When the parser is done (you can also stop it in any time via CTRL+C), you can see your database. Let's use these commands.
 
 - Run mongo
 
