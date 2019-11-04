@@ -21,7 +21,7 @@ for line in lines:
                         id.append(i)
                         id_number = ''.join(map(str, id))
                         id_number.strip()
-                        file_output.write(id_number, '\n')
+                        file_output.write(id_number+'\n')
 
 file_input.close()
 file_output.close()

@@ -13,7 +13,7 @@ import sys
 class OpenCorpSpider(scrapy.Spider):
     name = "opencorp"
     # choose all id-s from file valid_id_from_site.txt for parsing
-    with open('../valid_id_from_site.txt', 'r') as input_file:
+    with open('valid_id_from_site.txt', 'r') as input_file:
         lines = input_file.readlines()
         start_urls = []
         for line in lines:
