@@ -114,11 +114,26 @@ This method is implemented in file `estimate_by_upper_bound.py`. Output is store
 
 ```
 sudo mongod
+
 cd opencorporates/opencorporates/spiders
+
 scrapy crawl opencorp
 ```
+
 ## Docker
-How to run container
+
+How to run paser in a docker container.
+
+```
+docker run -it margarita9/test-task:0.5.0
+
+mkdir /data && mkdir /data/db && mongod --fork --logpath /var/task/db_log.txt
+
+cd opencorporates/opencorporates/spiders/
+
+scrapy crawl opencorp
+
+```
 
 
 ## MongoDB
@@ -126,7 +141,7 @@ How to run container
 When running of parser is done you can see your database.
 Let's use these commands.
 
-- Run mongo.
+- Run mongo
 
 ```
 mongo
@@ -135,11 +150,11 @@ mongo
 ```
 show dbs
 ```
-- Open our database.
+- Open our database
 ``` 
 use database
 ```
-- Show list of collections.
+- Show list of collections
 ```
 show collections 
 ```
